@@ -1,0 +1,8 @@
+<h2>Create edit form</h2>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {{new}}
+    <input type="submit" value="save">
+</form>
