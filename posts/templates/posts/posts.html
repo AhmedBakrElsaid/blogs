@@ -1,0 +1,8 @@
+<h2>blogs</h2>
+<a href="{% url 'blogs:post_new'  %}">create new post</a>
+<hr>
+{% for post in posts %}
+
+<h2><a href=" {% url 'blogs:post_detail' post.id %}">{{post}}</a></h2>
+
+{% endfor %}
